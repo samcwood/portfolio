@@ -13,6 +13,8 @@ module.exports = {
       colors: {
         cherry: '#ff2424',
         lightCherry: '#ff5e5e',
+        tan: '#ffe7bd',
+        darkgrey: '#1e2024',
       }
     },
   },

@@ -1,15 +1,15 @@
 <template>
-    <div class="header">
-        <nav class="container mx-auto px-6 py-3 relative bg-white">
+    <div class="header bg-darkgrey">
+        <nav class="container mx-auto px-6 py-3 relative">
             <div class="flex items-center justify-between">
                 <div class="pt-2">
-                    <a href="#" class="text-xl font-semibold hover:text-cherry">Samuel Wood</a>
+                    <a href="#" class="text-xl text-white font-semibold hover:text-lightCherry">Samuel Wood</a>
                 </div>
-                <div class="hidden md:flex space-x-6">
-                    <a href="#" class="hover:text-gray-500">About Me</a>
-                    <a href="#" class="hover:text-gray-500">Experience</a>
-                    <a href="#" class="hover:text-gray-500">Projects</a>
-                    <a href="#" class="hover:text-gray-500">Contact</a>
+                <div class="hidden text-white md:flex space-x-6">
+                    <a href="#" class="hover:text-lightCherry">About Me</a>
+                    <a href="#" class="hover:text-lightCherry">Experience</a>
+                    <a href="#" class="hover:text-lightCherry">Projects</a>
+                    <a href="#" class="hover:text-lightCherry">Contact</a>
                 </div>
                 <button :class="{ open: isOpen }" @click="toggleMenu()" class="block hamburger md:hidden focus:outline-none" id="menu-btn">
                     <span class="hamburger-top"></span>
@@ -66,7 +66,7 @@ export default {
         left: 0;
         width: 24px;
         height: 2px;
-        background: black;
+        background: white;
         transform: rotate(0);
         transition: all 0.5s;
 
