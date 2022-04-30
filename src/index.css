@@ -5,3 +5,11 @@
 .btn {
     @apply rounded-full py-3 px-4 text-base font-bold cursor-pointer bg-cherry text-white md:px-10 hover:bg-lightCherry;
 }
+
+.header-text {
+    @apply text-4xl font-bold text-center md:text-5xl md:text-left;
+}
+
+.section {
+    @apply mt-56 md:mt-80;
+}
