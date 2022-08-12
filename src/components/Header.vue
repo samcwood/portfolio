@@ -6,10 +6,10 @@
                     <a href="#" class="text-xl text-white font-semibold hover:text-lightCherry">Samuel Wood</a>
                 </div>
                 <div class="hidden text-white md:flex space-x-6">
-                    <a href="#hero-section" class="hover:text-lightCherry">About Me</a>
+                    <a href="#" class="hover:text-lightCherry">About Me</a>
                     <a href="#experience-section" class="hover:text-lightCherry">Experience</a>
-                    <a href="#" class="hover:text-lightCherry">Projects</a>
-                    <a href="#" class="hover:text-lightCherry">Contact</a>
+                    <a href="#project-section" class="hover:text-lightCherry">Projects</a>
+                    <a href="#contact-section" class="hover:text-lightCherry">Contact</a>
                 </div>
                 <button :class="{ open: isOpen }" @click="toggleMenu()" class="block hamburger md:hidden focus:outline-none" id="menu-btn">
                     <span class="hamburger-top"></span>
@@ -19,10 +19,10 @@
             </div>
             <div class="md:hidden">
                 <div :class="{ hidden: !isOpen }" id="menu" class="absolute w-full flex flex-col items-center self-end py-4 mt-5 space-y-4 bg-white drop-shadow-md right-1 left-1 self-center">
-                    <a @click="toggleMenu()" href="#hero-section" class="hover:text-gray-500">About Me</a>
+                    <a @click="toggleMenu()" href="#" class="hover:text-gray-500">About Me</a>
                     <a @click="toggleMenu()" href="#experience-section" class="hover:text-gray-500">Experience</a>
-                    <a @click="toggleMenu()" href="#" class="hover:text-gray-500">Projects</a>
-                    <a @click="toggleMenu()" href="#" class="hover:text-gray-500">Contact</a>
+                    <a @click="toggleMenu()" href="#project-section" class="hover:text-gray-500">Projects</a>
+                    <a @click="toggleMenu()" href="#contact-section" class="hover:text-gray-500">Contact</a>
                 </div>
             </div>
         </nav>
@@ -46,10 +46,9 @@ export default {
 
 <style lang="scss">
     .header {
-        position: fixed;
         top: 0;
         width: 100%;
-        //height: 100px;
+        height: 65px;
     }
     .hamburger {
         cursor: pointer;

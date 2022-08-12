@@ -11,5 +11,17 @@
 }
 
 .section {
-    @apply mt-56 md:mt-80;
+    @apply flex items-center justify-center;
+    height: 95vh;
+}
+
+.paragraph-text {
+    @apply text-center font-medium md:text-lg md:text-left lg:text-xl;
+}
+.divider {
+    @apply text-darkgrey;
+    border-top: 1px solid;
+}
+.show-border {
+    @apply border-2;
 }
